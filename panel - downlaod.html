@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="" type="image" href="https://imgur.com/YQGogAW.png">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="T">
+    <meta property="og:image" content="https://imgur.com/YQGogAW.png">
+    <meta property="og:url" content="">
+    <title>KX Softwares PvP Cheats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('assets/images/background2.jpg');
+            background-size: 1920px 1080px;
+            /* Adjust the background size as needed */
+            background-repeat: no-repeat;
+            /* Prevent the background from repeating */
+            color: #ddd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* Align elements vertically */
+            align-items: center;
+        }
+
+        .nav {
+            background-color: #22222200;
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin-top: 20px;
+            /* Add margin to separate from player */
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .alert {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            display: none;
+        }
+
+        #playerContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: flex-start;
+            /* Align to the top */
+            margin-top: 50px;
+            /* Move down slightly */
+        }
+
+        #player {
+            max-width: 600px;
+            border-radius: 10px;
+            /* Add rounded corners */
+            overflow: hidden;
+            /* Ensure content doesn't overflow rounded corners */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a href="https://kxsoftwares.github.io/httpskxcheatspvpfivem.github.io/" target="_blank">Home</a>
+        <a href="https://kxsoftwares.github.io/httpskxcheatspvpfivem.github.io/store.html" target="_blank">Webstore</a>
+        <a href="https://discord.gg/MTQjEjmr" target="_blank">Discord</a>
+    </nav>
+
+    <div id="playerContainer">
+        <div id="player"></div>
+    </div>
+
+    <div class="container" id="downloadContainer">
+        <div class="logo">
+            <!-- Placeholder for your logo -->
+            <img src="https://imgur.com/YQGogAW.png" alt="Logo" width="150">
+        </div>
+        <h2>Customer KX</h2>
+        <button class="button" onclick="download()">DOWNLOAD</button>
+    </div>
+
+    <div class="alert" id="customAlert">Custom alert box</div>
+
+    <script>
+        // Load YouTube Iframe API asynchronously
+        var tag = document.createElement('script');
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'Kv4nAshKmtg', // Replace with your YouTube video ID
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            // You can do something when the player is ready
+        }
+
+        function onPlayerStateChange(event) {
+            // You can do something when player's state changes
+        }
+
+        function download() {
+            // Replace "YOUR_DOWNLOAD_LINK" with your desired download link
+            window.location.href = "https://cdn.discordapp.com/attachments/1229060708239413290/1229403521397297172/KX_SERVIES.dll?ex=662f8e40&is=661d1940&hm=df594c1a75e0805cd91f56d828ccd7e30fc4d6e596e324071f214ee3fcbe267f&";
+        }
+
+        function showAlert(message) {
+            var alertBox = document.getElementById("customAlert");
+            alertBox.innerText = message;
+            alertBox.style.display = "block";
+            setTimeout(function() {
+                alertBox.style.display = "none";
+            }, 3000); // Hide after 3 seconds
+        }
+    </script>
+
+</body>
+
+</html>
